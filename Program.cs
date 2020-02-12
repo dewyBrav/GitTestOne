@@ -27,9 +27,13 @@ namespace GitTestOne
         public static void ClassStringTest(string ms)
         {
             string mess1= ms;
-
+            
             string sForm = String.Format($"String.Format is :{mess1}, Data now: {DateTime.Now}");
-            Console.WriteLine(sForm);
+            StringBuilder nes = new StringBuilder(sForm);
+            nes.Append(" !!!!!");
+
+
+            Console.WriteLine(nes);
         }
     }
 }
