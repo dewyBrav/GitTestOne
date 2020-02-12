@@ -17,7 +17,7 @@ namespace GitTestOne
             d1?.Invoke(null);
 
 
-
+            MyTestClassOne.MyTestClass();
 
 
             Console.ReadKey();
@@ -35,5 +35,7 @@ namespace GitTestOne
 
             Console.WriteLine(nes);
         }
+
+        
     }
 }
