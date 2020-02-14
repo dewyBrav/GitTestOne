@@ -20,6 +20,8 @@ namespace GitTestOne
 
             LINQtest.MethodLINQ();
 
+            ref_out_params.CallMethod();
+
             TestMethods.Function_one();
 
             Console.ReadKey();

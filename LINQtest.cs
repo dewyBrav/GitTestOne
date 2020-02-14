@@ -22,7 +22,7 @@ namespace GitTestOne
             }
         }
 
-        public  string LINQCall
+        private  string LINQCall
         {
             get
             {

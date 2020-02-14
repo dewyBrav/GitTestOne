@@ -25,7 +25,7 @@ namespace GitTestOne
 
         }
 
-        public string NAmeCall
+        private string NAmeCall
         {
             get
             {

@@ -15,9 +15,10 @@ namespace GitTestOne
             Console.WriteLine("\nВызов из класса: {0}", TM.NAmeCall);
 
 
+
         }
 
-    public string NAmeCall
+    private string NAmeCall
         {
             get
             {
