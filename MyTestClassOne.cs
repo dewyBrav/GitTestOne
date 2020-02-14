@@ -11,13 +11,26 @@ namespace GitTestOne
 
         public static void MyTestClass()
         {
+
+            MyTestClassOne TM = new MyTestClassOne();
+            Console.WriteLine("\nВызов из класса: {0}", TM.NAmeCall);
+
+
             UserPass user1 = new UserPass(Name: "Alex", Age: 26, Pass: "12345");
 
             // Вызываем обобщенный метод
             string s = InfoObject.Info<UserPass>(user1);
             Console.WriteLine(s);
-            Console.ReadLine();
+            
 
+        }
+
+        public string NAmeCall
+        {
+            get
+            {
+                return GetType().Name;
+            }
         }
     }
 
@@ -37,7 +50,7 @@ namespace GitTestOne
         public User(string Name, int Age)
         {
             this.Name = Name;
-            this.Age = Age;
+            this.Age = Age; 
         }
 
         public string Name { get; set; }

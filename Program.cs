@@ -10,31 +10,24 @@ namespace GitTestOne
 
     {
 
-        delegate void delgate(string m);
+        
         static void Main(string[] args)
         {
-            delgate d1 = ClassStringTest;
-            d1?.Invoke(null);
 
+            DelegateTest.Call_delegate();
 
             MyTestClassOne.MyTestClass();
 
+            LINQtest.MethodLINQ();
+
+            TestMethods.Function_one();
 
             Console.ReadKey();
         }
 
+        
 
-        public static void ClassStringTest(string ms)
-        {
-            string mess1= ms;
-            
-            string sForm = String.Format($"String.Format is :{mess1}, Data now: {DateTime.Now}");
-            StringBuilder nes = new StringBuilder(sForm);
-            nes.Append(" !!!!!");
-
-
-            Console.WriteLine(nes);
-        }
+        
 
         
     }
