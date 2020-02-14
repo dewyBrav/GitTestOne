@@ -29,18 +29,46 @@ namespace GitTestOne
 
             Console.WriteLine("Получение среднего значения из массива  - params -передача массива параметор ");
             double[] data = { 4.0, 5.3, 7.8, 64.22, 101, 67, 15.0, 9 };
-            
-            Console.WriteLine("Передача массива с парамтрами: {0}", data);
+            Console.WriteLine("Передача массива с парамтрами: ");
+            foreach (double d in data)
+            {
+                Console.Write("{0}  ", d);
+            }
+
             double average = CalculateAverage(data);
             Console.WriteLine($"Среднее значение из average: {average}");
 
+
+            Console.WriteLine("Необязательные параметры:");
+            Neob_parametr("My world is fun");
+            Neob_parametr("C3 is good", "Yes");
+
+            ImenovaniParametrs(txtColor: ConsoleColor.Green, mess: "Меняем цвет текста, метод использует именованный парамтр");
         }
+
+
+        static void Neob_parametr(string messm, string m2 = "Programmer")
+        {
+            Console.WriteLine(" {0} and {1}", messm, m2);
+          
+        }
+
+        static void ImenovaniParametrs(ConsoleColor txtColor, string mess)
+        {
+            ConsoleColor oldtxt = Console.ForegroundColor;
+            Console.ForegroundColor = txtColor;
+            Console.WriteLine(mess);
+            Console.ForegroundColor = oldtxt;
+
+        }
+
+
 
 
         static double CalculateAverage(params double[] values)
 
         {
-            Console.WriteLine("Размер полученных значении {0} doubles", values.Length);
+            Console.WriteLine("\nРазмер полученных значении {0} doubles", values.Length);
 
             double sum = 0;
             if (values.Length == 0) return sum;
