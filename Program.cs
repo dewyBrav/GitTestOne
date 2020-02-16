@@ -13,7 +13,7 @@ namespace GitTestOne
         
         static void Main(string[] args)
         {
-
+            Console.WriteLine("HELOOO");
             DelegateTest.Call_delegate();
 
             MyTestClassOne.MyTestClass();

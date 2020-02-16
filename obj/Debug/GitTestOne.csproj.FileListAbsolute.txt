@@ -4,3 +4,9 @@ C:\Users\Булат\source\repos\GitTestOne\GitTestOne\bin\Debug\GitTestOne.exe
 C:\Users\Булат\source\repos\GitTestOne\GitTestOne\bin\Debug\GitTestOne.pdb
 C:\Users\Булат\source\repos\GitTestOne\GitTestOne\obj\Debug\GitTestOne.exe
 C:\Users\Булат\source\repos\GitTestOne\GitTestOne\obj\Debug\GitTestOne.pdb
+C:\Users\b1sha\Source\Repos\GitTestOne\bin\Debug\GitTestOne.exe.config
+C:\Users\b1sha\Source\Repos\GitTestOne\bin\Debug\GitTestOne.exe
+C:\Users\b1sha\Source\Repos\GitTestOne\bin\Debug\GitTestOne.pdb
+C:\Users\b1sha\Source\Repos\GitTestOne\obj\Debug\GitTestOne.csprojAssemblyReference.cache
+C:\Users\b1sha\Source\Repos\GitTestOne\obj\Debug\GitTestOne.exe
+C:\Users\b1sha\Source\Repos\GitTestOne\obj\Debug\GitTestOne.pdb
