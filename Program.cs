@@ -26,6 +26,8 @@ namespace GitTestOne
 
             My_Array.CallMethod();
 
+            Enum_class.CallMethod();
+
             Console.ReadKey();
         }
 

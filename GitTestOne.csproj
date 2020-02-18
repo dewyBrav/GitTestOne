@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DelegateTest.cs" />
+    <Compile Include="Enum_class.cs" />
     <Compile Include="LINQtest.cs" />
     <Compile Include="MyTestClassOne.cs" />
     <Compile Include="My_Array.cs" />
