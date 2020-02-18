@@ -28,6 +28,8 @@ namespace GitTestOne
 
             Enum_class.CallMethod();
 
+
+            Struct_class.CallMethod();
             Console.ReadKey();
         }
 
