@@ -46,6 +46,7 @@
     <Compile Include="DelegateTest.cs" />
     <Compile Include="LINQtest.cs" />
     <Compile Include="MyTestClassOne.cs" />
+    <Compile Include="My_Array.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ref_out_params.cs" />

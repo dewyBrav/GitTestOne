@@ -24,6 +24,8 @@ namespace GitTestOne
 
             TestMethods.Function_one();
 
+            My_Array.CallMethod();
+
             Console.ReadKey();
         }
 
