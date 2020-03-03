@@ -43,11 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClassGetSet.cs" />
+    <Compile Include="ClassNull.cs" />
+    <Compile Include="ClassStatic.cs" />
+    <Compile Include="ClassThis.cs" />
     <Compile Include="DelegateTest.cs" />
     <Compile Include="Enum_class.cs" />
     <Compile Include="LINQtest.cs" />
     <Compile Include="MyTestClassOne.cs" />
     <Compile Include="My_Array.cs" />
+    <Compile Include="Nasledovanie.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ref_out_params.cs" />

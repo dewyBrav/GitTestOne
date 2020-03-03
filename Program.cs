@@ -30,11 +30,15 @@ namespace GitTestOne
 
 
             Struct_class.CallMethod();
+
+
+            //Nasledovanie NAs = new Nasledovanie();
+            Nasledovanie.Nasledovanie1();
             Console.ReadKey();
         }
 
         
-
+        
         
 
         
