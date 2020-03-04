@@ -13,7 +13,7 @@ namespace GitTestOne
         
         static void Main(string[] args)
         {
-
+            Console.WriteLine("HELOOO");
             DelegateTest.Call_delegate();
 
             MyTestClassOne.MyTestClass();
@@ -24,11 +24,21 @@ namespace GitTestOne
 
             TestMethods.Function_one();
 
+            My_Array.CallMethod();
+
+            Enum_class.CallMethod();
+
+
+            Struct_class.CallMethod();
+
+
+            //Nasledovanie NAs = new Nasledovanie();
+            Nasledovanie.Nasledovanie1();
             Console.ReadKey();
         }
 
         
-
+        
         
 
         
