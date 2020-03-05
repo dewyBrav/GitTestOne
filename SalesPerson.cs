@@ -33,7 +33,7 @@ namespace GitTestOne
            
         }
 
-        public override void DisplayStats()
+        public override sealed void DisplayStats()
         {
             base.DisplayStats();
             Console.WriteLine("SalesNumber: {0}", SalesNumber);

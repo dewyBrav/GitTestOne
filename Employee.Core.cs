@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GitTestOne
 {
-    partial class Employee
+    abstract partial class Employee
     {
         protected string empName;
         protected int empID;

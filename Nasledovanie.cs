@@ -8,6 +8,7 @@ namespace GitTestOne
 {
     class Nasledovanie
     {
+        
 
         public static void Nasledovanie1()
         {
@@ -26,27 +27,28 @@ namespace GitTestOne
             Console.WriteLine("Работа с клссами Employee, Manager, SalesPerson\n");
             SalesPerson fred = new SalesPerson();
             fred.Age = 31;
-            fred.Name = "Fred";
+            fred.Name = "Fred_prod";
             fred.SalesNumber = 50;
             //Console.WriteLine($"Age { fred.Age}, Name: {fred.Name}, SaleNumber {fred.SalesNumber}");
             fred.DisplayStats();
 
-            Manager chucky = new Manager("Chucky", 50, 92, 10000, "3333-23-2121", 9000);
+            Manager chucky = new Manager("Mnagera", 50, 92, 10000, "3333-23-2121", 9000);
             double cost = chucky.GetBenefitCost();
             //Console.WriteLine($"Age { chucky.Age}, Name: {chucky.Name}, ID {chucky.ID}, PAY {chucky.Pay}, SocialNumber {chucky.SocialSecNumber}, StackOption {chucky.StockOption}, Cost {cost}");
             chucky.GiveBonus(300);
             chucky.DisplayStats();
 
             Console.WriteLine();
-            SalesPerson fran = new SalesPerson("Fran", 43, 93, 3000, "932-32-3232", 31);
+            SalesPerson fran = new SalesPerson("Prodovan", 43, 93, 3000, "932-32-3232", 31);
             fran.GiveBonus(200);
             fran.DisplayStats();
 
-
-
+            //Employee yy = new Employee();  клаас абстрактный, не дает создать экземпляр
+            
 
 
             Employee.BenefitPackage.BenefitPackageLevel myBenefitLevel = Employee.BenefitPackage.BenefitPackageLevel.Platinum;
+
 
         }
 

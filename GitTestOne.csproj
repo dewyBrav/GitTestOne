@@ -53,6 +53,7 @@
     <Compile Include="Enum_class.cs" />
     <Compile Include="LINQtest.cs" />
     <Compile Include="Manager.cs" />
+    <Compile Include="MyException.cs" />
     <Compile Include="MyTestClassOne.cs" />
     <Compile Include="My_Array.cs" />
     <Compile Include="Nasledovanie.cs" />
@@ -65,6 +66,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="ClassDiagram2.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
