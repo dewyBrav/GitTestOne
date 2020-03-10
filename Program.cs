@@ -34,7 +34,10 @@ namespace GitTestOne
 
             //Nasledovanie NAs = new Nasledovanie();
             Nasledovanie.Nasledovanie1();
-            Console.ReadKey();
+
+            MyInterface.MyInterfaceI();
+
+           Console.ReadKey();
         }
 
         

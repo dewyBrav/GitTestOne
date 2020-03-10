@@ -50,6 +50,7 @@
     <Compile Include="DelegateTest.cs" />
     <Compile Include="Enum_class.cs" />
     <Compile Include="LINQtest.cs" />
+    <Compile Include="MyInterface.cs" />
     <Compile Include="MyTestClassOne.cs" />
     <Compile Include="My_Array.cs" />
     <Compile Include="Nasledovanie.cs" />
@@ -61,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
