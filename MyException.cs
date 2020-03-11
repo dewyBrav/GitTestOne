@@ -11,24 +11,44 @@ namespace GitTestOne
         public static void CallMethod()
         {
 
-            MyException MT = new MyException();
-            Console.WriteLine("\nВызов из класса: {0}", MT.NAmeCall);
+            try
+            {
 
+                MyException MT = new MyException();
+                Console.WriteLine("\nВызов из класса: {0}", MT.NAmeCall);
 
-
-
-
-
-
-
-
-
-
-
-
+                object i = "1";
+                int o = (int)i;//исключение
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"{ex.Message} \n {ex.Data}\n {ex.Source}\n {ex.StackTrace}\n {ex.TargetSite}\n {ex.HResult}\n {ex.HelpLink}");
+            }
 
 
         }
+
+        public MyException()
+        {
+
+
+        }
+
+        public MyException(string s):base()
+        {
+
+
+        }
+
+
+
+
+
+
+
+
+
+
 
         private string NAmeCall
         {

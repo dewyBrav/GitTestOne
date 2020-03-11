@@ -36,6 +36,9 @@ namespace GitTestOne
             Nasledovanie.Nasledovanie1(); 
 
             MyException.CallMethod();
+
+
+
             Console.ReadKey();
         }
 
