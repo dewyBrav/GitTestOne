@@ -8,22 +8,57 @@ namespace GitTestOne
 {
     class Nasledovanie
     {
+        
 
         public static void Nasledovanie1()
         {
             Nasledovanie MT = new Nasledovanie();
             Console.WriteLine("\n\nВызов из класса: {0}", MT.Names);
             Vivod();
-        }
 
+
+            Console.WriteLine("\nРабота с классами partial Employee");
+            EmployClassWordk();
+
+
+        }
+        static void EmployClassWordk()
+        {
+            Console.WriteLine("Работа с клссами Employee, Manager, SalesPerson\n");
+            SalesPerson fred = new SalesPerson();
+            fred.Age = 31;
+            fred.Name = "Fred_prod";
+            fred.SalesNumber = 50;
+            //Console.WriteLine($"Age { fred.Age}, Name: {fred.Name}, SaleNumber {fred.SalesNumber}");
+            fred.DisplayStats();
+
+            Manager chucky = new Manager("Mnagera", 50, 92, 10000, "3333-23-2121", 9000);
+            double cost = chucky.GetBenefitCost();
+            //Console.WriteLine($"Age { chucky.Age}, Name: {chucky.Name}, ID {chucky.ID}, PAY {chucky.Pay}, SocialNumber {chucky.SocialSecNumber}, StackOption {chucky.StockOption}, Cost {cost}");
+            chucky.GiveBonus(300);
+            chucky.DisplayStats();
+
+            Console.WriteLine();
+            SalesPerson fran = new SalesPerson("Prodovan", 43, 93, 3000, "932-32-3232", 31);
+            fran.GiveBonus(200);
+            fran.DisplayStats();
+
+            //Employee yy = new Employee();  клаас абстрактный, не дает создать экземпляр
+            
+
+
+            Employee.BenefitPackage.BenefitPackageLevel myBenefitLevel = Employee.BenefitPackage.BenefitPackageLevel.Platinum;
+
+
+        }
 
         public static void Vivod()
         {
             Car c1 = new Car();
-            Console.WriteLine($"{c1.maxSpeed}   {c1.Speed}");
+            Console.WriteLine($"МАКС скорость {c1.maxSpeed}   Текущая скорсоть {c1.Speed}");
 
             c1.Speed = 90;
-            Console.WriteLine($"{c1.maxSpeed}   {c1.Speed}") ;
+            Console.WriteLine($"{c1.maxSpeed}   {c1.Speed}");
 
             c1.Speed = 30;
             Console.WriteLine($"{c1.maxSpeed}   {c1.Speed}");
@@ -60,7 +95,7 @@ namespace GitTestOne
     }
 
 
-     class Car
+    class Car
     {
         public readonly int maxSpeed;
         protected int currSpeed;
@@ -84,7 +119,7 @@ namespace GitTestOne
 
     }
 
-    class MashineOne:Car
+    class MashineOne : Car
     {
 
 
@@ -97,7 +132,7 @@ namespace GitTestOne
                 currSpeed = value;
                 if (currSpeed > maxSpeed)
                 {
-                    currSpeed = maxSpeed+2;
+                    currSpeed = maxSpeed + 2;
                 }
 
             }
@@ -106,7 +141,7 @@ namespace GitTestOne
 
     }
 
-     class MashineTwo:Car
+    class MashineTwo : Car
     {
     }
 }
