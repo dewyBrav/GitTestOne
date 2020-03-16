@@ -38,7 +38,7 @@ namespace GitTestOne
             MyException.CallMethod();
 
 
-
+            MyCollection mCL = new MyCollection();
             Console.ReadKey();
         }
 

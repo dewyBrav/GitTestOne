@@ -53,6 +53,8 @@
     <Compile Include="Enum_class.cs" />
     <Compile Include="LINQtest.cs" />
     <Compile Include="Manager.cs" />
+    <Compile Include="MyCollection.cs" />
+    <Compile Include="MyCollection_2.cs" />
     <Compile Include="MyException.cs" />
     <Compile Include="MyTestClassOne.cs" />
     <Compile Include="My_Array.cs" />
